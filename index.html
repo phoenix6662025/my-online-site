@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой онлайн сайт | Деплой на Vercel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Заголовок сайта -->
+        <header class="header">
+            <h1><i class="fas fa-rocket"></i> Мой первый сайт на Vercel</h1>
+            <p class="subtitle">Успешный деплой статического сайта</p>
+        </header>
+
+        <!-- Основной контент -->
+        <main class="main-content">
+            <section class="hero">
+                <div class="hero-image">
+                    <img src="https://images.unsplash.com/photo-1555099962-4199c345e5dd?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+                         alt="Веб-разработка" loading="lazy">
+                </div>
+                
+                <div class="hero-text">
+                    <h2>Добро пожаловать на мой сайт!</h2>
+                    <p>Это демонстрационная страница, размещенная на Vercel. Здесь вы можете увидеть пример работы современного статического сайта.</p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <i class="fas fa-bolt"></i>
+                            <h3>Быстрая загрузка</h3>
+                            <p>Vercel использует edge-сеть для мгновенной доставки контента</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shield-alt"></i>
+                            <h3>Безопасность</h3>
+                            <p>Автоматический HTTPS и защита от DDoS атак</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-sync-alt"></i>
+                            <h3>Автодеплой</h3>
+                            <p>Автоматическое обновление при каждом push в Git</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Интерактивная секция -->
+            <section class="interactive">
+                <h2><i class="fas fa-code"></i> Демо JavaScript функциональности</h2>
+                
+                <div class="demo-section">
+                    <!-- Счетчик -->
+                    <div class="counter-widget">
+                        <h3>Счетчик посещений</h3>
+                        <div class="counter-display" id="counter">0</div>
+                        <div class="counter-controls">
+                            <button id="incrementBtn" class="btn btn-primary">
+                                <i class="fas fa-plus"></i> Увеличить
+                            </button>
+                            <button id="decrementBtn" class="btn btn-secondary">
+                                <i class="fas fa-minus"></i> Уменьшить
+                            </button>
+                            <button id="resetBtn" class="btn btn-danger">
+                                <i class="fas fa-redo"></i> Сбросить
+                            </button>
+                        </div>
+                        <p class="counter-info">Значение сохраняется в localStorage</p>
+                    </div>
+
+                    <!-- Изображение с эффектом -->
+                    <div class="image-widget">
+                        <h3>Интерактивное изображение</h3>
+                        <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                             alt="Программирование" id="demoImage" loading="lazy">
+                        <div class="image-controls">
+                            <button id="grayscaleBtn" class="btn btn-outline">
+                                <i class="fas fa-adjust"></i> Ч/Б фильтр
+                            </button>
+                            <button id="rotateBtn" class="btn btn-outline">
+                                <i class="fas fa-sync-alt"></i> Повернуть
+                            </button>
+                            <button id="resetImageBtn" class="btn btn-outline">
+                                <i class="fas fa-undo"></i> Сбросить
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Инструкции по деплою -->
+            <section class="instructions">
+                <h2><i class="fas fa-graduation-cap"></i> Как разместить сайт на Vercel</h2>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Создайте Git репозиторий</h3>
+                        <p>Инициализируйте Git в папке проекта и загрузите код на GitHub</p>
+                        <code class="code-block">git init && git add . && git commit -m "Initial commit"</code>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Зарегистрируйтесь на Vercel</h3>
+                        <p>Используйте ваш GitHub аккаунт для быстрой регистрации</p>
+                        <code class="code-block">Перейдите на vercel.com и нажмите "Sign Up"</code>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Импортируйте проект</h3>
+                        <p>Выберите ваш репозиторий из списка и нажмите "Deploy"</p>
+                        <code class="code-block">Проект автоматически соберется и будет размещен</code>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Получите ссылку</h3>
+                        <p>После деплоя вы получите уникальную ссылку на ваш сайт</p>
+                        <code class="code-block">https://my-online-site.vercel.app</code>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Футер -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4><i class="fas fa-info-circle"></i> О проекте</h4>
+                    <p>Это демонстрационный проект для изучения деплоя статических сайтов на Vercel.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4><i class="fas fa-link"></i> Технологии</h4>
+                    <div class="tech-stack">
+                        <span class="tech-badge">HTML5</span>
+                        <span class="tech-badge">CSS3</span>
+                        <span class="tech-badge">JavaScript</span>
+                        <span class="tech-badge">Git</span>
+                        <span class="tech-badge">Vercel</span>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4><i class="fas fa-external-link-alt"></i> Полезные ссылки</h4>
+                    <ul>
+                        <li><a href="https://vercel.com/docs" target="_blank">Документация Vercel</a></li>
+                        <li><a href="https://github.com" target="_blank">GitHub</a></li>
+                        <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2023 Мой онлайн сайт. Создано для обучения деплою на Vercel.</p>
+                <div class="site-info">
+                    <span id="currentDate"></span>
+                    <span>Посетителей: <span id="visitorCount">1</span></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Уведомления -->
+    <div class="notification" id="notification">
+        <span id="notificationText"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
